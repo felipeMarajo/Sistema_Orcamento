@@ -2,31 +2,30 @@ package Model;
 
 public class Computador {
 	
-	private String defeito;
-	private String resolucao;
+	private int idComputador;
+	private String modelo;
 	
-
-
-	public Computador(String defeito, String resolucao) {
-		this.defeito = defeito;
-		this.resolucao = resolucao;
+	
+	public Computador(int idComputador, String modelo) {
+		this.idComputador = idComputador;
+		this.modelo = modelo;
 	}
 
 	// Gets and Sets
-	public String getDefeito() {
-		return defeito;
-	}
-
-	public void setDefeito(String defeito) {
-		this.defeito = defeito;
+	public int getIdComputador() {
+		return idComputador;
 	}
 	
-	public String getResolucao() {
-		return resolucao;
+	public void setIdComputador(int idComputador) {
+		this.idComputador = idComputador;
+	}
+	
+	public String getModelo() {
+		return modelo;
 	}
 
-	public void setResolucao(String resolucao) {
-		this.resolucao = resolucao;
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
 	}
 
 }

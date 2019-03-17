@@ -11,8 +11,6 @@ public class Ordem_Servico {
 	private Status status;
 	
 	
-	
-	
 	public Ordem_Servico(int idordemservicao, Cliente cliente, String dataEntrada,
 			String datasaida, float valor, Status status) {
 		
