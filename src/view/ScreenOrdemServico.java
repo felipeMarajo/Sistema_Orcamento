@@ -29,6 +29,7 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.beans.PropertyChangeListener;
 import java.text.NumberFormat;
+import javax.swing.JTextArea;
 
 public class ScreenOrdemServico extends JDialog {
 
@@ -60,7 +61,7 @@ public class ScreenOrdemServico extends JDialog {
 	 * Create the dialog.
 	 */
 	public ScreenOrdemServico() {
-		setBounds(100, 100, 505, 300);
+		setBounds(100, 100, 648, 446);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -68,38 +69,38 @@ public class ScreenOrdemServico extends JDialog {
 		
 		JLabel label = new JLabel("Cliente:");
 		label.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label.setBounds(71, 44, 40, 14);
+		label.setBounds(103, 45, 40, 14);
 		contentPanel.add(label);
 		
 		JComboBox cbCliente = new JComboBox();
 		cbCliente.setModel(new DefaultComboBoxModel(new String[] {"Selecione um Cliente"}));
-		cbCliente.setBounds(134, 23, 249, 22);
+		cbCliente.setBounds(153, 23, 249, 22);
 		viewComboBox(cbCliente);
 		contentPanel.add(cbCliente);
 		
 		textField = new JTextField();
 		textField.setColumns(10);
-		textField.setBounds(134, 59, 249, 20);
+		textField.setBounds(153, 59, 249, 20);
 		contentPanel.add(textField);
 		
 		JLabel label_1 = new JLabel("Computador:");
 		label_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_1.setBounds(41, 89, 70, 14);
+		label_1.setBounds(73, 93, 70, 14);
 		contentPanel.add(label_1);
 		
 		JLabel label_2 = new JLabel("Data de Entrada:");
 		label_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_2.setBounds(21, 128, 90, 14);
+		label_2.setBounds(53, 310, 90, 14);
 		contentPanel.add(label_2);
 		
 		txtData = new JTextField();
 		txtData.setColumns(10);
-		txtData.setBounds(134, 126, 107, 20);
+		txtData.setBounds(153, 308, 107, 20);
 		contentPanel.add(txtData);
 		
 		JLabel label_3 = new JLabel("Valor:");
 		label_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_3.setBounds(80, 169, 31, 14);
+		label_3.setBounds(112, 341, 31, 14);
 		contentPanel.add(label_3);
 		
 		txtPreco = new JFormattedTextField(amountFormat);
@@ -121,7 +122,7 @@ public class ScreenOrdemServico extends JDialog {
 			}
 		});
 		txtPreco.setColumns(10);
-		txtPreco.setBounds(134, 167, 107, 20);
+		txtPreco.setBounds(153, 339, 107, 20);
 		contentPanel.add(txtPreco);
 		
 		JButton bntCadastrar = new JButton("Cadastrar");
@@ -132,14 +133,35 @@ public class ScreenOrdemServico extends JDialog {
 				
 			}
 		});
-		bntCadastrar.setBounds(361, 134, 96, 31);
-		contentPanel.add(bntCadastrar);
 		
 		lblValidation = new JLabel("");
 		lblValidation.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblValidation.setForeground(Color.RED);
-		lblValidation.setBounds(134, 190, 140, 14);
+		lblValidation.setBounds(153, 370, 140, 14);
 		contentPanel.add(lblValidation);
+		bntCadastrar.setBounds(483, 332, 96, 31);
+		contentPanel.add(bntCadastrar);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Selecione um computador"}));
+		comboBox.setBounds(153, 90, 249, 22);
+		contentPanel.add(comboBox);
+		
+		JLabel lblProblemaApresentado = new JLabel("Problema Apresentado:");
+		lblProblemaApresentado.setBounds(28, 219, 115, 14);
+		contentPanel.add(lblProblemaApresentado);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(153, 214, 298, 83);
+		contentPanel.add(textArea);
+		
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setBounds(153, 136, 298, 67);
+		contentPanel.add(textArea_1);
+		
+		JLabel lblConfigurao = new JLabel("Configura\u00E7\u00E3o:");
+		lblConfigurao.setBounds(73, 141, 70, 14);
+		contentPanel.add(lblConfigurao);
 	}
 	
 	public void bntCadastrarActionPermorfed(java.awt.event.ActionEvent evt, JComboBox cbCliente) {
