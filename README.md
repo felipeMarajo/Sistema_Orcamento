@@ -1,4 +1,4 @@
-# Ordem de Serviço Repo
+# Ordem de ServiÃ§o Repo
 
-Este repositório serve para o projeto em java de criar uma aplicação 
-Desktop de cadastro de ordem de serviços.
+Este repositÃ³rio serve para o projeto pessoal em java de criar uma aplicaÃ§Ã£o 
+Desktop de cadastro de ordem de serviÃ§os.
