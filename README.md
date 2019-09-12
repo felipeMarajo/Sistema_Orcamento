@@ -2,6 +2,12 @@
 
 Este repositório serve para o projeto pessoal em java de criar uma aplicação Desktop de cadastro de ordem de serviços.
 
+![Tela_principal](./Readme_Images/Tela_principal.png)
+
+![Tela_clientes](./Readme_Images/Tela_clientes.png)
+
+![Tela_consultar_servico](./Readme_Images/Tela_consultar_servico.png)
+
 ## Sobre este projeto ##
 
 A ideia da aplicação é:
