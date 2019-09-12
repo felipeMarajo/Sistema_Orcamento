@@ -11,7 +11,7 @@ A ideia da aplicação é:
 As funcionalidades dessa aplicação foram escolhidas visando a mellhoria da eficiência da gestão de clientes praticada por mim. Entretanto, a maior parte do código pode ser reaproveitado para outra sistema de cadastro, a exemplo de um sistema básico de biblioteca.
 
 ## O por quê desse projeto? ##
-Este projeto faz parte do meus portifólio, portanto, ficarei grato se você puder conceder um feedback de alguma melhoria.
+Este projeto faz parte do meu portifólio, portanto, ficarei grato se você puder conceder um feedback de alguma melhoria.
 
 ## Funcionalidades da aplicação ##
 - Cadastre um cliente, o cadastro do cliente será usado para iniciar um novo orçamento.
