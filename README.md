@@ -20,7 +20,7 @@ Este projeto faz parte do meus portifólio, portanto, ficarei grato se você pud
 
 - Obtenha detalhes dos serviços, podendo pesquiasar pelo nome do cliente e o status do serviço. 
 
-- No relatório dos serviços você 
+- No relatório dos serviços você pode:
     - Detalhar.
     - Mudar o status.
     - Salvar alguma informação como data de saída e valor.
