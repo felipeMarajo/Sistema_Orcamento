@@ -1,6 +1,6 @@
 # Ordem de Serviço
 
-Este repositório serve para o projeto pessoal em java de criar uma aplicação Desktop de cadastro de ordem de serviços.
+Projeto pessoal no padrão MVC utilizando Java e MySQL de uma aplicação Desktop de cadastro de ordem de serviços.
 
 ![Tela_principal](./Readme_Images/Tela_principal.png)
 
